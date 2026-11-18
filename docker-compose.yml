@@ -1,0 +1,14 @@
+services:
+  aeolp:
+    build: .
+    container_name: aeolp-app
+    ports:
+      - "5000:5000"
+    volumes:
+      - aeolp_database:/app/instance
+      - aeolp_uploads:/app/uploads
+    restart: unless-stopped
+
+volumes:
+  aeolp_database:
+  aeolp_uploads:
