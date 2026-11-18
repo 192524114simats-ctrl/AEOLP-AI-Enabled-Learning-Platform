@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Competency Assessment - AEOLP</title>
+</head>
+<body>
+
+    <h1>Competency Assessment</h1>
+
+    <h2>Evaluate Your Skills</h2>
+
+    <form method="POST" action="/assessment">
+
+        <label>1. Python Programming</label><br>
+        <select name="python" required>
+            <option value="">Select Level</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+        </select>
+
+        <br><br>
+
+        <label>2. Data Analysis</label><br>
+        <select name="data_analysis" required>
+            <option value="">Select Level</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+        </select>
+
+        <br><br>
+
+        <label>3. Machine Learning</label><br>
+        <select name="machine_learning" required>
+            <option value="">Select Level</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+        </select>
+
+        <br><br>
+
+        <label>4. Statistics</label><br>
+        <select name="statistics" required>
+            <option value="">Select Level</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Submit Assessment</button>
+
+    </form>
+
+    <br>
+    <a href="/learner-dashboard">Back to Dashboard</a>
+
+</body>
+</html>

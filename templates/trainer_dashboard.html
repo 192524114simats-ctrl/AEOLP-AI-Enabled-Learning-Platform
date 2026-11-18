@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trainer Dashboard - AEOLP</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f6fb;
+            margin: 0;
+            padding: 30px;
+            color: #24324a;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            color: #174ea6;
+            text-align: center;
+        }
+
+        h2, h3 {
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #667085;
+        }
+
+        .activities {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .activity {
+            display: block;
+            padding: 22px;
+            background: #eaf2ff;
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
+            color: #174ea6;
+            font-weight: bold;
+            border: 1px solid #d5e4ff;
+        }
+
+        .activity:hover {
+            background: #d8e7ff;
+        }
+
+        .logout {
+            display: block;
+            width: fit-content;
+            margin: 30px auto 0;
+            padding: 12px 25px;
+            background: #dc3545;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Welcome to Trainer Dashboard</h1>
+
+        <h2>AI Enabled Learning Platform</h2>
+
+        <p class="subtitle">
+            Manage learning materials and monitor learner performance.
+        </p>
+
+        <h3>Trainer Activities</h3>
+
+        <div class="activities">
+
+            <a class="activity" href="/upload-material">
+                Upload Learning Materials
+            </a>
+
+            <a class="activity" href="/materials">
+                View Uploaded Learning Materials
+            </a>
+
+            <a class="activity" href="/trainer/reports">
+                View Performance Reports
+            </a>
+
+        </div>
+
+        <a class="logout" href="/logout">Logout</a>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Learning Material - AEOLP</title>
+</head>
+<body>
+
+    <h1>Upload Learning Materials</h1>
+
+    <h2>AI Powered Quiz Generation</h2>
+
+    <p>Upload your learning materials to generate MCQs and quizzes.</p>
+
+    <form method="POST" action="/upload-material"
+          enctype="multipart/form-data">
+
+        <label>Select Learning Material:</label>
+        <br><br>
+
+        <input type="file" name="material"
+               accept=".pdf,.txt,.docx,.pptx" required>
+
+        <br><br>
+
+        <button type="submit">Upload Material</button>
+
+    </form>
+
+    <br>
+
+    <a href="/learner-dashboard">Back to Dashboard</a>
+
+</body>
+</html>

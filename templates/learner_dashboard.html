@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Learner Dashboard - AEOLP</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f6fb;
+            margin: 0;
+            padding: 30px;
+            color: #24324a;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            color: #174ea6;
+            text-align: center;
+        }
+
+        h2, h3 {
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #667085;
+        }
+
+        .activities {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .activity {
+            display: block;
+            padding: 20px;
+            background: #eaf2ff;
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
+            color: #174ea6;
+            font-weight: bold;
+            border: 1px solid #d5e4ff;
+        }
+
+        .activity:hover {
+            background: #d8e7ff;
+        }
+
+        .adaptive {
+            background-color: #e6f7ed;
+            color: #187545;
+            border-color: #c5ead3;
+        }
+
+        .adaptive:hover {
+            background-color: #d1f0dd;
+        }
+
+        .logout {
+            display: block;
+            width: fit-content;
+            margin: 30px auto 0;
+            padding: 12px 25px;
+            background: #dc3545;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .logout:hover {
+            background: #b02a37;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Welcome to Learner Dashboard</h1>
+
+        <h2>AI Enabled Learning Platform</h2>
+
+        <p class="subtitle">
+            Learn, assess your skills and improve your competencies.
+        </p>
+
+        <h3>My Learning Activities</h3>
+
+        <div class="activities">
+
+            <a class="activity" href="/assessment">
+                Take Competency Assessment
+            </a>
+
+            <a class="activity" href="/recommendations">
+                View Training Recommendations
+            </a>
+
+            <a class="activity" href="/materials">
+                Access Learning Materials & Quizzes
+            </a>
+
+            <a class="activity" href="/quiz-history">
+                View My Quiz History
+            </a>
+
+            <a class="activity adaptive" href="/adaptive-quiz">
+                Take Smart Adaptive Quiz
+            </a>
+
+            <a class="activity adaptive" href="/adaptive-quiz-history">
+                View Adaptive Quiz History
+            </a>
+
+        </div>
+
+        <a class="logout" href="/logout">Logout</a>
+
+    </div>
+
+</body>
+</html>

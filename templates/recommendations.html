@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personalized Training - AEOLP</title>
+</head>
+<body>
+
+    <h1>Personalized Training Recommendations</h1>
+
+    <h2>Recommended Courses Based on Your Skill Gaps</h2>
+
+    {% if recommendations %}
+
+        {% for course in recommendations %}
+            <div>
+                <h3>{{ course.skill }}</h3>
+                <p><b>Recommended Course:</b> {{ course.course }}</p>
+                <p><b>Description:</b> {{ course.description }}</p>
+                <p><b>Training Level:</b> {{ course.level }}</p>
+            </div>
+            <hr>
+        {% endfor %}
+
+    {% else %}
+        <p>No skill gaps found. Keep improving your skills!</p>
+    {% endif %}
+
+    <br>
+    <a href="/learner-dashboard">Back to Dashboard</a>
+
+</body>
+</html>
